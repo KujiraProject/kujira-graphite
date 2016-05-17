@@ -1,0 +1,12 @@
+[Unit]
+Description=Graphite's caching to redis service.
+After=multi-user.target
+
+[Service]
+Type=simple
+ExecStart=/media/sf_centos7/kujira-api/kujira_graphite/script/graphite_redis_script
+
+
+[Install]
+WantedBy=multi-user.target
+
