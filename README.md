@@ -1,6 +1,6 @@
 [![ZenHub] (https://raw.githubusercontent.com/ZenHubIO/support/master/zenhub-badge.png)] (https://zenhub.io)
 # kujira-graphite
-Service which is saving metrics from graphite-api to redis server. 
+Daemon to cache graphite statistics in Redis database. 
 To be able to use library you have to copy config file to /etc :
 * `cd kujira-api/kujira_graphite` 
 * `cp config/kujira-graphite.cfg /etc/kujira-graphite.cfg`
