@@ -1,0 +1,15 @@
+[Unit]
+Description=Graphite's caching to redis service.
+After=multi-user.target redis.service
+Wants=redis.service
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/python /opt/kujira_graphite/lib/graphite_redis_service.py
+Restart=always
+Environment=\
+    PYTHONPATH=/opt/kujira_graphite
+
+[Install]
+WantedBy=multi-user.target
+
